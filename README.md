@@ -33,6 +33,19 @@ This is an example configuration that you can modify in `config.json`.
 }
 ```
 
+# Issues with switching back to older clients / Old clients crashing on startup or server switch
+Since older clients work differently when you switch to an older client it might crash, to fix this clear the cookies and site data for this project.
+
+# Default presets
+This project contains 5 (+1) presets by default:
+- November, 2019
+- November, 2020
+- November, 2021
+- November, 2022
+- November, 2023
+- (+1) Web testing (debug)
+These presets have been tested and they work currently (12/7/2023).
+
 # Adding more presets (versions)
 1. Go to `web.archive.org` and type in `https://discordapp.com/login` (if the client you want to add is older than 2020 May) and `https://discord.com/login` if it's newer.
 

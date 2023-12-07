@@ -22,7 +22,7 @@ npm run start
 # Tips
 From what I've seen the clients work a lot better if they're being accessed using HTTPS, I won't show how can you do that in this small docs but you can search it up on google.
 
-The clients that require HTTPS won't work without HTTPS (obviously), from what I've experienced the clients after the rspack change require to be ran on HTTPS.
+The clients that require HTTPS won't work without HTTPS (obviously), from what I've experienced the clients after the rspack change require to be run on HTTPS.
 
 # Configuration
 This is an example configuration that you can modify in `config.json`.
@@ -154,9 +154,9 @@ window.GLOBAL_ENV = {
 Exposing this to the public isn't the best idea since this works by proxying the requests to Discord, this means if someone who's using this gets banned the IP ban might be applied to your IP and not to theirs.
 
 # Designs
-- `Web testing (debug)` preset and `Version/preset selector`: (@Zyrenth)[https://github.com/Zyrenth] and (@ZyrenthDev)[https://github.com/ZyrenthDev]
+- `Web testing (debug)` preset and `Version/preset selector`: [@Zyrenth](https://github.com/Zyrenth) and [@ZyrenthDev](https://github.com/ZyrenthDev)
   - Zyrenth's Design System's license can be found in the `ZDev_Design_License.md` file.
-- `Discord` ("client"): (discord.com)[https://discord.com]
+- `Discord` ("client"): [discord.com](https://discord.com)
 
 # Future updates
-I'm not sure if I will update this again as this is a side-project.
+I'm not sure if I will update this again as this is a side project.

@@ -12,4 +12,6 @@ export default function ExistsCheck(dir: string | string[]) {
     else pathList.push(...dir);
 
     if (!fs.existsSync(path.join(...pathList))) throw new Error(`Required file/folder isn't found at ${path.join(...pathList)}`);
+
+    return true;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Launcher | Made by Zyrenth(.dev)</title>
+    <title>Web testing | Discord Launcher</title>
     <style>
       /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
@@ -674,6 +674,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         max-height: 40vh;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 0.625rem;
         align-self: stretch;
         overflow-y: scroll;
@@ -870,65 +871,17 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </svg>
       </div>
       <div class="body">
-        <p class="title">Select a version</p>
+        <p class="title">Web testing</p>
         <p class="description">
-          Select a version preset to continue to Discord.
-          <u>Only recommened to use it with phone verified accounts.</u>
+          If you see this page the system works perfectly. Try going to any other path and it should have the exact same page as this.
         </p>
       </div>
-      <div class="versions">
-        <% presets.forEach(preset => { %>
-        <div class="version" preset-id="<%= preset.id %>">
-          <p class="version-name"><%= preset.name %></p>
-          <p class="version-description"><%= preset.flags ? (presetFlags[String(preset.flags)] ? presetFlags[String(preset.flags)] : 'Unknown flags') + ', click' : 'Click' %> to select this preset.</p>
-        </div>
-        <% }); %>
-        <div class="version" onclick="location.replace('/__reset')">
-          <p class="version-name">Reset session</p>
-          <p class="version-description">Click to reset the current session.</p>
-        </div>
-      </div>
-      <div class="buttons" hidden>
-        <div class="btn btn-blurple">
-          <svg
-            width="20"
-            height="15"
-            viewBox="0 0 20 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6.6713 0.5C6.03063 0.5 4.0991 1.28357 3.75256 1.44016C3.40603 1.59676 3.02139 2.0856 2.58495 2.89239C2.14791 3.69918 1.79721 4.64232 1.2274 6.02964C0.658178 7.41697 0.5254 10.0916 0.544453 10.9079C0.563506 11.7242 0.656987 12.3619 1.49355 12.8448C2.32952 13.3271 3.06902 13.832 3.84723 14.1357C4.62604 14.4393 5.15715 14.6578 5.51798 14.3542C5.8788 14.0505 6.11637 13.5188 6.11637 13.5188C6.11637 13.5188 6.45814 13.0443 5.81271 12.7597C5.16728 12.4744 4.84456 12.275 4.87254 11.9808C4.90112 11.6867 4.94816 11.5253 5.10952 11.5635C5.27088 11.6016 5.65135 12.2845 7.1131 12.5977C8.57485 12.9109 9.99969 12.8638 9.99969 12.8638C9.99969 12.8638 11.4251 12.9115 12.8869 12.5977C14.3486 12.2845 14.7285 11.6016 14.8898 11.5635C15.0512 11.5253 15.0982 11.6867 15.1268 11.9802C15.1554 12.275 14.8327 12.4744 14.1873 12.7597C13.5418 13.0443 13.8836 13.5188 13.8836 13.5188C13.8836 13.5188 14.1212 14.0499 14.482 14.3542C14.8422 14.6578 15.3739 14.4393 16.1521 14.1357C16.9303 13.832 17.6705 13.3277 18.5064 12.8448C19.343 12.3619 19.4365 11.7242 19.4555 10.9079C19.4746 10.0922 19.3418 7.41697 18.772 6.02964C18.2028 4.64232 17.8515 3.69918 17.4144 2.89239C16.9786 2.0856 16.5933 1.59676 16.2474 1.43957C15.9009 1.28357 13.9687 0.5 13.3281 0.5C12.6874 0.5 12.4981 0.946563 12.4981 0.946563L12.2748 1.44016C12.2748 1.44016 10.7743 1.15496 10.0098 1.15436C9.24529 1.15436 7.72519 1.44016 7.72519 1.44016L7.50191 0.945968C7.50191 0.945968 7.31257 0.5 6.6713 0.5ZM6.74096 6.42321H6.76478C7.69899 6.42321 8.45577 7.24072 8.45577 8.24877C8.45577 9.2574 7.69899 10.0743 6.76478 10.0743C5.83057 10.0743 5.07379 9.2574 5.07379 8.24877C5.0732 7.25025 5.81628 6.43691 6.74096 6.42321ZM13.2352 6.42321H13.259C14.1837 6.43691 14.9262 7.25085 14.9262 8.24877C14.9262 9.2574 14.1694 10.0743 13.2352 10.0743C12.3004 10.0743 11.5442 9.2574 11.5442 8.24877C11.5442 7.24072 12.3004 6.42321 13.2352 6.42321Z"
-              fill="white"
-            />
-          </svg>
-          Continue to Discord
+      <div class="buttons">
+        <div class="btn btn-blurple" onclick="location.replace('/')">
+          Go back to version selector
         </div>
       </div>
     </div>
     <p class="footer">© Zyrenth.dev 2023</p>
-
-    <script>
-      const versions = document.getElementsByClassName("versions")[0];
-      const presets = [...versions.getElementsByTagName("div")];
-      const buttonContainer = document.getElementsByClassName("buttons")[0];
-      const button = buttonContainer.getElementsByClassName("btn")[0];
-
-      let selected = null;
-
-      for (const preset of presets) {
-        preset.addEventListener("click", () => {
-          for (const preset of presets) preset.classList.remove("selected");
-          preset.classList.add("selected");
-          selected = preset.getAttribute("preset-id");
-
-          if (selected) buttonContainer.hidden = false;
-        });
-      }
-
-      button.addEventListener("click", () => {
-        location.replace(`./__launch/${selected}`);
-      });
-    </script>
   </body>
 </html>

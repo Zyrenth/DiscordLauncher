@@ -23,13 +23,6 @@ await new Promise((resolve) => {
 });
 
 try {
-    fs.copyFileSync('.env', 'dist/.env');
-    console.log(`[Build]`, `Copied environment vars to the build.`);
-} catch (error) {
-    console.warn(`[Build]`, `Failed to copy environment vars to the build:`, error.message);
-}
-
-try {
     fs.copyFileSync('config.json', 'dist/config.json');
     console.log(`[Build]`, `Copied app configuration to the build.`);
 } catch (error) {

@@ -1,10 +1,7 @@
-import * as dotenv from 'dotenv';
 import * as fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'node:url';
-import url from 'url';
 
-import * as WebSocket from 'ws';
 import express from 'express';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
@@ -16,11 +13,9 @@ import PresetsLoader from './Utilities/PresetsLoader.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
-ExistsCheck('.env');
 ExistsCheck('config.json');
 ExistsCheck(['..', 'presets']);
 
-dotenv.config({ path: __dirname + '/.env' });
 const config = JSON.parse(fs.readFileSync(__dirname + '/config.json', 'utf-8'));
 const presets = PresetsLoader();
 
@@ -92,8 +87,8 @@ app.get('*', async (req, res, next) => {
     res.sendFile(path.join(...preset.index));
 });
 
-app.listen(3455, () => {
-    console.log('Listening on port 3455');
+app.listen(config['port'], () => {
+    console.log('Listening on port', config['port']);
 });
 
 export { __dirname };

@@ -1,3 +1,4 @@
 {
-    "secret": "very secret"
+    "secret": "very secret",
+    "port": 3455
 }

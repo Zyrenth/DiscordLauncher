@@ -44,6 +44,7 @@ This project contains 5 (+1) presets by default:
 - November, 2022
 - November, 2023
 - (+1) Web testing (debug)
+
 These presets have been tested and they work currently (12/7/2023).
 
 # Adding more presets (versions)

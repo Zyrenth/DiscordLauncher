@@ -1,6 +1,8 @@
 # DiscordLauncher
 Ever wanted to go back to the old versions of Discord? Not a problem, go back as early as 2019 using this program.
 
+<a href="https://github.com/Zyrenth"><img src="https://raw.githubusercontent.com/Zyrenth/Zyrenth/main/GitHub%20Projects%20Profile%20Link.png" /></a>
+
 # How to use it?
 1. Clone this repo using:
 ```bash

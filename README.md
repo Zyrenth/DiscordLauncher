@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> This project is entirely for educational purposes only! Data that can be found in the "presets" folder is strictly owned by Discord.
+
 # DiscordLauncher
 Ever wanted to go back to the old versions of Discord? Not a problem, go back as early as 2019 using this program.
 

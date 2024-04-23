@@ -186,6 +186,6 @@ window.GLOBAL_ENV = {
 12. Congrats you've added a new preset.
 
 # Designs
-- `Web testing (debug)` preset and `Version/preset selector`: [@Zyrenth](https://github.com/Zyrenth) and [@ZyrenthDev](https://github.com/ZyrenthDev)
+- `Web testing (debug)` preset and `Version/preset selector`: [@Zyrenth](https://github.com/Zyrenth) and [@ZyrenthDevelopment](https://github.com/ZyrenthDevelopment)
   - Zyrenth's Design System's license can be found in the `ZDev_Design_License.md` file.
 - `Discord` ("client"): [discord.com](https://discord.com)

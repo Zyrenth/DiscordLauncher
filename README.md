@@ -1,5 +1,8 @@
+> [!CAUTION]
+> This project was archived on Sep 2, 2024 - there has been no updates ever since. Use this project at your own risk.
+
 > [!IMPORTANT]  
-> This version of the project is no longer actively maintained. I have plans for a V2 version in the future but I don't have an ETA for that yet.
+> ~~This version of the project is no longer actively maintained. I have plans for a V2 version in the future but I don't have an ETA for that yet.~~
 
 > [!IMPORTANT]  
 > This project is entirely for educational purposes only! Data that can be found in the "presets" folder is strictly owned by Discord.
